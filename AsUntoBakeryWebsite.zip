@@ -1,6 +1,31 @@
 as-unto-bakery/
 │
-├── index.html
+├── index.html<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>As Unto Bakery</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lora:wght@400;500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+</body>
+
+</html>
 ├── about.html
 ├── menu.html
 ├── order.html
@@ -8,7 +33,78 @@ as-unto-bakery/
 ├── contact.html
 │
 ├── css/
-│   └── style.css
+│   └── style.css/* ===========
+   AS UNTO BAKERY
+   Main Stylesheet
+=========== */
+
+:root{
+
+--dusty-rose:#D19A90;
+
+--butter-cream:#EBD6A9;
+
+--sage-green:#9D998A;
+
+--cloud-blue:#ABB4B3;
+
+--warm-taupe:#BCAD99;
+
+--cocoa:#594E44;
+
+--white:#FFFDFB;
+
+}
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
+}
+
+body{
+
+font-family:'Lora', serif;
+
+background:var(--white);
+
+color:var(--cocoa);
+
+line-height:1.7;
+
+}
+
+h1,h2,h3,h4{
+
+font-family:'Playfair Display', serif;
+
+}
+
+a{
+
+text-decoration:none;
+
+color:inherit;
+
+}
+
+img{
+
+max-width:100%;
+
+display:block;
+
+}
+
+section{
+
+padding:80px 8%;
+
+}
 │
 ├── js/
 │   └── script.js
