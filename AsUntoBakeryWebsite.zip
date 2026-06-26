@@ -6,16 +6,14 @@ as-unto-bakery/
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>As Unto Bakery</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lora:wght@400;500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lora:wght@400;500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/style.css">
 
@@ -23,35 +21,92 @@ as-unto-bakery/
 
 <body>
 
+<header>
+
+    <img src="images/logo.png" alt="As Unto Bakery Logo" class="logo">
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="menu.html">Menu</a>
+
+        <a href="gallery.html">Gallery</a>
+
+        <a href="contact.html">Contact</a>
+
+        <a href="order.html" class="order-btn">
+
+            Request an Order
+
+        </a>
+
+    </nav>
+
+</header>
+
+<section class="hero">
+
+    <div class="hero-box">
+
+        <p class="welcome">
+            Welcome to
+        </p>
+
+        <h1>As Unto Bakery</h1>
+
+        <p class="quote">
+
+            Treats crafted with care,
+            made as unto the Lord.
+
+        </p>
+
+        <div class="buttons">
+
+            <a href="order.html" class="primary">
+
+                Request an Order
+
+            </a>
+
+            <a href="menu.html" class="secondary">
+
+                View Menu
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
 </body>
 
 </html>
 ├── about.html
 ├── menu.html
-├── order.html
 ├── gallery.html
+├── order.html
 ├── contact.html
 │
 ├── css/
-│   └── style.css/* ===========
+│   └── /* ===========================
    AS UNTO BAKERY
-   Main Stylesheet
-=========== */
+   Version 1.0
+=========================== */
 
 :root{
 
---dusty-rose:#D19A90;
-
---butter-cream:#EBD6A9;
-
---sage-green:#9D998A;
-
---cloud-blue:#ABB4B3;
-
---warm-taupe:#BCAD99;
-
+--dusty:#D19A90;
+--butter:#EBD6A9;
+--sage:#9D998A;
+--cloud:#ABB4B3;
+--taupe:#BCAD99;
 --cocoa:#594E44;
-
 --white:#FFFDFB;
 
 }
@@ -59,50 +114,203 @@ as-unto-bakery/
 *{
 
 margin:0;
-
 padding:0;
-
 box-sizing:border-box;
+
+}
+
+html{
+
+scroll-behavior:smooth;
 
 }
 
 body{
 
-font-family:'Lora', serif;
-
 background:var(--white);
+
+font-family:'Lora',serif;
 
 color:var(--cocoa);
 
-line-height:1.7;
+}
+
+header{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:20px 8%;
+
+background:white;
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
+box-shadow:0 3px 12px rgba(0,0,0,.05);
 
 }
 
-h1,h2,h3,h4{
+.logo{
 
-font-family:'Playfair Display', serif;
+height:95px;
 
 }
 
-a{
+nav{
+
+display:flex;
+
+align-items:center;
+
+gap:30px;
+
+font-family:'Poppins',sans-serif;
+
+}
+
+nav a{
 
 text-decoration:none;
 
-color:inherit;
+color:var(--cocoa);
+
+font-weight:500;
+
+transition:.3s;
 
 }
 
-img{
+nav a:hover{
 
-max-width:100%;
-
-display:block;
+color:var(--dusty);
 
 }
 
-section{
+.order-btn{
 
-padding:80px 8%;
+background:var(--dusty);
+
+color:white;
+
+padding:14px 24px;
+
+border-radius:40px;
+
+}
+
+.order-btn:hover{
+
+background:var(--cocoa);
+
+color:white;
+
+}
+
+.hero{
+
+padding:120px 20px;
+
+background:linear-gradient(
+rgba(255,253,251,.92),
+rgba(255,253,251,.92)
+);
+
+text-align:center;
+
+}
+
+.hero-box{
+
+max-width:750px;
+
+margin:auto;
+
+}
+
+.welcome{
+
+letter-spacing:4px;
+
+font-family:'Poppins',sans-serif;
+
+text-transform:uppercase;
+
+color:var(--sage);
+
+margin-bottom:15px;
+
+}
+
+.hero h1{
+
+font-family:'Playfair Display',serif;
+
+font-size:64px;
+
+margin-bottom:20px;
+
+}
+
+.quote{
+
+font-size:24px;
+
+margin-bottom:45px;
+
+}
+
+.buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.primary{
+
+background:var(--dusty);
+
+color:white;
+
+padding:16px 30px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-family:'Poppins',sans-serif;
+
+font-weight:600;
+
+}
+
+.secondary{
+
+background:var(--butter);
+
+color:var(--cocoa);
+
+padding:16px 30px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-family:'Poppins',sans-serif;
+
+font-weight:600;
 
 }
 │
@@ -111,8 +319,8 @@ padding:80px 8%;
 │
 └── images/
     ├── logo.png
+    ├── hero/
     ├── cookies/
     ├── cupcakes/
     ├── bread/
     ├── cinnamon-rolls/
-    └── backgrounds/
