@@ -1,1 +1,22 @@
-
+as-unto-bakery/
+│
+├── index.html
+├── about.html
+├── menu.html
+├── order.html
+├── gallery.html
+├── contact.html
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   └── script.js
+│
+└── images/
+    ├── logo.png
+    ├── cookies/
+    ├── cupcakes/
+    ├── bread/
+    ├── cinnamon-rolls/
+    └── backgrounds/
